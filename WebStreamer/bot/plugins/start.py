@@ -13,7 +13,7 @@ START_TEXT = """
 <i>👋 Hᴇʏ,</i>{}\n
 <i>I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs DOWNLOADER Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs GᴇɴᴇʀᴀᴛOR</i>\n
 <i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
-<i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>
+<i><u>**WARNING** 🚸</u></i>
 <b> SPAMMING   ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ .</b>\n\n
 <i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</b>@ADARSHGOELo5</i>"""
 
