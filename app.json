@@ -87,7 +87,7 @@
     }],
   "formation": {
       "web": {
-          "quantity": 3,
+          "quantity": 30,
           "size": "free"
       }
   }
