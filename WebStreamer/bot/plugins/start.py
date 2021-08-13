@@ -9,7 +9,8 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 
-@web.on_message(filters.command('login') & filters.incoming & filters.private)
+
+@webstreamer.on_message(filters.command('login') & filters.incoming & filters.private)
 async def password(c, m):
     if Config.BOT_PASSWORD:
         if m.from_user.id in Config.AUTH_USERS:
@@ -32,7 +33,6 @@ async def password(c, m):
                 return await m.reply_text(f'Incorrect password', quote=True)
     else:
         await m.reply_text(f'**This bot was publicly available to all {SMILING_FACE_WITH_HEARTS}.**\nIf you are the owner of the bot to make bot private add bot password in Config Vars {LOCKED_WITH_KEY}.', quote=True)
-
 
 START_TEXT = """
 <i>👋 Hᴇʏ,</i>{}\n
