@@ -21,10 +21,7 @@
           "description": "Set this to True if you don't want to crash the bot",
           "value": "True"
       },
-      "BOT_PASSWORD": {
-            "description": "If you want to use the bot private you can set a password to use only by your.",
-            "required": false
-       },
+      
       "APP_NAME": {
           "description": "Copy-Paste the app name that you just typed above."
       },
