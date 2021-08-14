@@ -13,6 +13,7 @@ from WebStreamer.bot import StreamBot
 from WebStreamer.vars import Var
 from pyrogram import filters, Client
 from pyrogram.types import Message
+from pyrogram.emoji import *
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 broadcast_ids = {}
 
@@ -20,8 +21,8 @@ broadcast_ids = {}
 
 @StreamBot.on_message(filters.command('login') & filters.incoming & filters.private)
 async def password(c, m):
-    if Config.BOT_PASSWORD:
-        if m.from_user.id in Config.AUTH_USERS:
+    if Var.BOT_PASSWORD:
+        if m.from_user.id in Var.AUTH_USERS:
             return await m.reply_text(f"__Hey you are auth user of this bot so you don't want to login {DETECTIVE_LIGHT_SKIN_TONE}.__")
 
         is_logged = (await get_data(m.from_user.id)).is_logged
@@ -32,7 +33,7 @@ async def password(c, m):
             await m.reply_text('Send me the bot password in the format `/login password`')
         else:
             cmd, pwd = m.text.split(' ', 1)
-            if pwd == Config.BOT_PASSWORD:
+            if pwd == Var.BOT_PASSWORD:
                 await update_login(m.from_user.id, True)
                 await m.reply_text(text=LOCKED_WITH_KEY, quote=True)
                 await m.reply_text(f'Logged Sucessfully to the bot.\nEnjoy the bot now {FACE_SAVORING_FOOD}.', quote=True)
